@@ -210,4 +210,26 @@ Created
 ### For Booking_Collection_800:
 ![800pass](https://github.com/user-attachments/assets/8b472863-db27-453f-89e1-b2860370d003)
 ![800](https://github.com/user-attachments/assets/d8d640af-d1b7-4e0e-a778-6fd89c35e09d)
+### For Booking_Collection_1600:
+![1600pass](https://github.com/user-attachments/assets/be8a9731-2741-49fe-ba05-7308a8cec74c)
+![1600](https://github.com/user-attachments/assets/4cc18a1c-32d6-42b4-b640-8578c9f30aed)
+### For Booking_Collection_1800:
+![1800pass](https://github.com/user-attachments/assets/96eb98db-d37a-4886-a6d8-e67a60f07e71)
+![1800](https://github.com/user-attachments/assets/b2b5e20f-1084-4984-b62a-79e2671b9402)
+
+I’ve completed performance test on frequently used API for test App. 
+Test executed for the below mentioned shows the Booking_collection 800, 1600 & 1800
+
+- 800 Concurrent Request with 1 Loop Count; Avg TPS for Total Samples is ~ 491.83 And Total Concurrent API requested: 4800.
+- 1600 Concurrent Request with 1 Loop Count; Avg TPS for Total Samples is ~ 1398.43 And Total Concurrent API requested: 9600.
+- 1800 Concurrent Request with 10 Loop Count; Avg TPS for Total Samples is ~ 3571.71 And Total Concurrent API requested: 108000.
+
+While executed 1800 concurrent request, found  6048 request got connection timeout and error rate is 5.60% 
+
+Summary: Server can handle almost concurrent 9600 API call with almost zero (0) error rate.
+
+ 
+
+
+
 
