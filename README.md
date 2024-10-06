@@ -198,9 +198,16 @@ Start JMeter
 ```console 
 Created
   ```
-
+## Report Generation Steps:
+- Save the jmx file with proper thread count/ramp up/loopcount (keeping in mind -> listener disable, assertion disable)
+- Generate the command to run performance test in cmd
+- jmeter -n -t Booking_Collection_1800.jmx -l report\Booking_Collection_1800.jtl
+- jmeter -g report\Booking_Collection_1800.jtl -o report\Booking_Collection_1800.html
 
 ## Newman Report Summary:  
+### I’ve completed performance test on frequently used API for test App. Test executed for the below mentioned shows the Booking_collection 800, 1600 & 1800
+
+
 
 ![github3](https://github.com/user-attachments/assets/0097e615-60c5-4cc3-8127-2035a41b18c6)
 ![github4](https://github.com/user-attachments/assets/f8f25854-3f67-4630-ad3a-b33b6b026b2b)
