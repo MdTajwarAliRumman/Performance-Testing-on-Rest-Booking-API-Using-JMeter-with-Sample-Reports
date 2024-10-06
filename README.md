@@ -61,21 +61,17 @@ Start JMeter
 ### Request Method: POST
 ### Path: auth
 
-- Add "HTTP Header Manager" -> set Content-Type: application/json & Accept: */* 
-- Add "JSON Extractor"-> set Names of Variables: "extractedToken" & JSON path extraction: "$.token"
+- Add "HTTP Header Manager" -> set (Content-Type: application/json) & (Accept: */*) 
+- Add "JSON Extractor"-> set (Names of Variables: extractedToken) & (JSON path extraction: $.token)
  
 
 **Request Body:**
 ```console 
-	{
+{
 	"username": "admin",
 	"password": "password123"
 }
 
-  ```
-**Response Body:**
-```console 
-  
   ```
 
 ## _**3. Create Booking**_
@@ -87,8 +83,8 @@ Start JMeter
 ### Request Method: POST
 ### Path: booking
 
-- Add "HTTP Header Manager" -> set Content-Type: application/json & Accept: */* 
-- Add "JSON Extractor"-> set Names of Variables: ExtractedBookingId & JSON path extraction: $.bookingid
+- Add "HTTP Header Manager" -> set (Content-Type: application/json) & (Accept: */*) 
+- Add "JSON Extractor"-> set (Names of Variables: ExtractedBookingId) & (JSON path extraction: $.bookingid)
  
 
 **Request Body:**
@@ -108,7 +104,7 @@ Start JMeter
   ```
 **Response Body:**
 ```console 
-  	{"bookingid":4562,"booking":{"firstname":"Tajwar","lastname":"Ali","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+{"bookingid":4562,"booking":{"firstname":"Tajwar","lastname":"Ali","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
   ```
 
 ## _**4. GET Booking**_
@@ -120,17 +116,12 @@ Start JMeter
 ### Request Method: GET
 ### Path: booking/${ExtractedBookingId}
 
-- Add "HTTP Header Manager" -> set Content-Type: application/json & Accept: */* 
+- Add "HTTP Header Manager" -> set (Content-Type: application/json) & (Accept: */*) 
  
 
-**Request Body:**
-```console 
-
-
-  ```
 **Response Body:**
 ```console 
-  	{"firstname":"Tajwar","lastname":"Ali","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+{"firstname":"Tajwar","lastname":"Ali","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
   ```
 
 ## _**5. Update Booking**_
