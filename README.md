@@ -61,7 +61,7 @@ Start JMeter
 ### Request Method: POST
 ### Path: auth
 
-- Add "HTTP Header Manager" -> set (Content-Type: application/json) & (Accept: */*) 
+- Add "HTTP Header Manager" -> set \b(Content-Type: application/json) & (Accept: \*/\*) 
 - Add "JSON Extractor"-> set (Names of Variables: extractedToken) & (JSON path extraction: $.token)
  
 
