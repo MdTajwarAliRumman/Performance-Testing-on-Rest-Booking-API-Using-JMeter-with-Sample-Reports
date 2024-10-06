@@ -61,7 +61,7 @@ Start JMeter
 ### Request Method: POST
 ### Path: auth
 
-- Add "HTTP Header Manager" -> set \b(Content-Type: application/json) & (Accept: \*/\*) 
+- Add "HTTP Header Manager" -> set (Content-Type: application/json) & (Accept: \*/\*) 
 - Add "JSON Extractor"-> set (Names of Variables: extractedToken) & (JSON path extraction: $.token)
  
 
@@ -83,7 +83,7 @@ Start JMeter
 ### Request Method: POST
 ### Path: booking
 
-- Add "HTTP Header Manager" -> set (Content-Type: application/json) & (Accept: */*) 
+- Add "HTTP Header Manager" -> set (Content-Type: application/json) & (Accept: \*/\*) 
 - Add "JSON Extractor"-> set (Names of Variables: ExtractedBookingId) & (JSON path extraction: $.bookingid)
  
 
@@ -155,7 +155,7 @@ Start JMeter
   ```
 **Response Body:**
 ```console 
-  	{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
   ```
 
 ## _**6. Update Booking Using PATCH**_
@@ -167,7 +167,7 @@ Start JMeter
 ### Request Method: PATCH
 ### Path: booking/${ExtractedBookingId}
 
-- Add "HTTP Header Manager" -> set Content-Type: application/json, Accept: */* & Cookie: token=${extractedToken}
+- Add "HTTP Header Manager" -> set (Content-Type: application/json), (Accept: \*/\*) & (Cookie: token=${extractedToken})
  
 **Request Body:**
 ```console 
@@ -180,7 +180,7 @@ Start JMeter
   ```
 **Response Body:**
 ```console 
-  	{"firstname":"Rumman","lastname":"Ali","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+{"firstname":"Rumman","lastname":"Ali","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
   ```
 
 ## _**7. Delete Booking**_
@@ -192,11 +192,11 @@ Start JMeter
 ### Request Method: DELETE
 ### Path: booking/${ExtractedBookingId}
 
-- Add "HTTP Header Manager" -> set Content-Type: application/json & Cookie: token=${extractedToken}
+- Add "HTTP Header Manager" -> set (Content-Type: application/json) & (Cookie: token=${extractedToken})
  
 **Response Body:**
 ```console 
-  	Created
+Created
   ```
 
 
