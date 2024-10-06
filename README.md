@@ -1,25 +1,22 @@
 ### **#(Note: Get the entire project by downloading the full code from the collection and environment.)**
-## Rest Booking API Testing with Postman & Newman
-This project provides an example of utilizing Postman for API testing, including a set of tests to verify different API endpoints.
+## Performance Testing on Rest Booking API using JMeter
+This project provides an example of utilizing JMeter for performance testing. The project also offers a report on various thread counts (user counts), with the test commencing at 100 users and concluding with 1800 users and 10 loop counts. 
 
 ### **Features**
 
 - Tests for GET, POST, PUT, PATCH, DELETE requests
 - Collection of tests covering different API endpoints
-- Environment setup for easy switching between environments
-- Pre-request scripts for data setup
-- Test scripts for assertions and validations
+- Test Plan setup
+- Each Request containing HTTP Header Manager
+- View Results Tree
 
 ## API Documentation:
 
 ### **Technology used:**
 - Jmeter
-- 
 
 ### **Prerequisite:**
 - RAM: At least 16Gb RAM, 32GB recommended.
-- Newman
-- Newman Html Report Library
 
 ### **Installation**
 
@@ -33,11 +30,11 @@ Start JMeter
 ## **Testing**
 
 ## Test Site:
-	```console 
+	
     	   https://reqres.in/
 
  	   https://reqres.in/api/users/2
-  	```
+  	
 
 ### **Creating JMeter test:**
 -Start JMeter
