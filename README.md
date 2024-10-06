@@ -116,7 +116,7 @@ Start JMeter
 ### Request Method: GET
 ### Path: booking/${ExtractedBookingId}
 
-- Add "HTTP Header Manager" -> set (Content-Type: application/json) & (Accept: */*) 
+- Add "HTTP Header Manager" -> set (Content-Type: application/json) & (Accept: \*/\*) 
  
 
 **Response Body:**
@@ -133,7 +133,7 @@ Start JMeter
 ### Request Method: PUT
 ### Path: booking/${ExtractedBookingId}
 
-- Add "HTTP Header Manager" -> set Content-Type: application/json, Accept: */* & Cookie: token=${extractedToken}
+- Add "HTTP Header Manager" -> set (Content-Type: application/json), (Accept: \*/\*) & (Cookie: token=${extractedToken})
  
 **Request Body:**
 ```console 
