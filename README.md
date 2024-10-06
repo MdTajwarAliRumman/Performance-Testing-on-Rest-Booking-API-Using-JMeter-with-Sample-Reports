@@ -22,7 +22,7 @@ This project provides an example of utilizing JMeter for performance testing. Th
 
 1. Jmeter: If you haven't already, [download and install Postman.](https://jmeter.apache.org/)
 
-2. -download -> unzip -> bin -> jmeter.bat
+2. Download -> unzip -> bin -> jmeter.bat
 *Do not use GUI mode for performance test, debug and setup
 Start JMeter
 
@@ -31,23 +31,22 @@ Start JMeter
 
 ## Test Site:
 	
-    	   https://reqres.in/
-
- 	   https://reqres.in/api/users/2
+### URL: https://reqres.in/
+### URL: https://reqres.in/api/users/2
   	
 
 ### **Creating JMeter test:**
--Start JMeter
--Test plan creation
--Thread group
--Sampler (http)
--Listener
--Run
+- Start JMeter
+- Test plan creation
+- Thread group
+- Sampler (http)
+- Listener
+
 ### **Listener:**
--view results in tree
--Aggregate report
--Graph results
--Simple data writer
+- view results in tree
+- Aggregate report
+- Graph results
+- Simple data writer
 
 ## _**1. Creating HTTP Requests**_
 - Select Test Plan
